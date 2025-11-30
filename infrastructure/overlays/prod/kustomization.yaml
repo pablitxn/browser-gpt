@@ -9,5 +9,6 @@ patches:
 - path: config-map.yaml
 - path: deployment.yaml
 images:
-- name: ghcr.io/pablitxn/browser-gpt:prod
+- digest: sha256:5a965e93b7a49c70105ee8b3974ee359dd2c7db61add71aa04d9e9fadc445c50
+  name: ghcr.io/pablitxn/browser-gpt:prod
   newName: ghcr.io/pablitxn/browser-gpt
