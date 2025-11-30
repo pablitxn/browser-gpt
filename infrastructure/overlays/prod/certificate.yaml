@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: browser-gpt-orchid-labs-tls
+  namespace: browser-gpt-prod
+spec:
+  secretName: browser-gpt-orchid-labs-tls
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  dnsNames:
+    - browser-gpt.orchid-labs.xyz

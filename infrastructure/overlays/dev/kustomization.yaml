@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - ../../base/
   - ingress-route.yaml
+  - certificate.yaml
 
 patches:
   - path: config-map.yaml

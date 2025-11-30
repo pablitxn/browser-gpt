@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: browser-gpt-dev-orchid-labs-tls
+  namespace: browser-gpt-dev
+spec:
+  secretName: browser-gpt-dev-orchid-labs-tls
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  dnsNames:
+    - browser-gpt-dev.orchid-labs.xyz

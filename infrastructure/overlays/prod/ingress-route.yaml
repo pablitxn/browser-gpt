@@ -17,4 +17,4 @@ spec:
           kind: Service
           port: 80
   tls:
-    secretName: acme-crt-secret
+    secretName: browser-gpt-orchid-labs-tls
