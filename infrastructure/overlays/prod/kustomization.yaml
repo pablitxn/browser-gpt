@@ -9,6 +9,5 @@ patches:
 - path: config-map.yaml
 - path: deployment.yaml
 images:
-- digest: sha256:f07f06bac5b23bfd898dda8532f63c12813ef3ebaf3840dc47908b38036d438a
-  name: us-central1-docker.pkg.dev/beaming-night-424319-g5/playground/local-gpt:prod
-  newName: us-central1-docker.pkg.dev/beaming-night-424319-g5/playground/local-gpt
+- name: ghcr.io/pablitxn/browser-gpt:prod
+  newName: ghcr.io/pablitxn/browser-gpt
